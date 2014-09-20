@@ -1,5 +1,5 @@
 <?php
-Class utils
+Class Utils
 {
 	public static function generateHash($password)
 	{
