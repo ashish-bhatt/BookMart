@@ -51,9 +51,9 @@ return array(
 		),
 		
 		'db'=>array(
-    		'connectionString'=>'pgsql:host=localhost;port=5432;dbname=BookMart',
-    		'username'=>'postgres',
-    		'password'=>'apollosatellite',
+    		'connectionString'=>'pgsql:host=ec2-54-204-45-126.compute-1.amazonaws.com;port=5432;dbname=d9bfiivre8ucte',
+    		'username'=>'wktdsxpdvrvmpt',
+    		'password'=>'H9WkcWHwvKQTHQqSb41VaaX_JU',
 		),
 		// uncomment the following to use a MySQL database
 		/*
