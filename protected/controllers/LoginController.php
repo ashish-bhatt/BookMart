@@ -44,7 +44,7 @@ class LoginController extends Controller
 		
 		if(!is_null($user))
 		{
-			if($user->hash === utils::generateReverseHash($_POST['password'], $user->hash))
+			if($user->hash === Utils::generateReverseHash($_POST['password'], $user->hash))
 			{
 				Yii::app()->session['login'] = 1;
 				Yii::app()->session['username'] = $user->username;
