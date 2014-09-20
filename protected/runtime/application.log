@@ -1,0 +1,33 @@
+2014/09/19 20:16:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in /Users/ashishb261/Sites/bookmart/framework/web/CController.php:483
+Stack trace:
+#0 /Users/ashishb261/Sites/bookmart/framework/web/CController.php(270): CController->missingAction('home')
+#1 /Users/ashishb261/Sites/bookmart/framework/web/CWebApplication.php(282): CController->run('home')
+#2 /Users/ashishb261/Sites/bookmart/framework/web/CWebApplication.php(141): CWebApplication->runController('Payments/home/i...')
+#3 /Users/ashishb261/Sites/bookmart/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/ashishb261/Sites/bookmart/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~ashishb261/bookmart/index.php/Payments/home/index
+HTTP_REFERER=http://localhost/~ashishb261/bookmart/index.php/Item/checkout
+---
+2014/09/19 20:18:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in /Users/ashishb261/Sites/bookmart/framework/web/CController.php:483
+Stack trace:
+#0 /Users/ashishb261/Sites/bookmart/framework/web/CController.php(270): CController->missingAction('home')
+#1 /Users/ashishb261/Sites/bookmart/framework/web/CWebApplication.php(282): CController->run('home')
+#2 /Users/ashishb261/Sites/bookmart/framework/web/CWebApplication.php(141): CWebApplication->runController('Payments/home/i...')
+#3 /Users/ashishb261/Sites/bookmart/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/ashishb261/Sites/bookmart/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~ashishb261/bookmart/index.php/Payments/home/index
+HTTP_REFERER=http://localhost/~ashishb261/bookmart/index.php/Payments/index
+---
+2014/09/19 20:18:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in /Users/ashishb261/Sites/bookmart/framework/web/CController.php:483
+Stack trace:
+#0 /Users/ashishb261/Sites/bookmart/framework/web/CController.php(270): CController->missingAction('home')
+#1 /Users/ashishb261/Sites/bookmart/framework/web/CWebApplication.php(282): CController->run('home')
+#2 /Users/ashishb261/Sites/bookmart/framework/web/CWebApplication.php(141): CWebApplication->runController('Payments/home/i...')
+#3 /Users/ashishb261/Sites/bookmart/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/ashishb261/Sites/bookmart/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~ashishb261/bookmart/index.php/Payments/home/index
+HTTP_REFERER=http://localhost/~ashishb261/bookmart/index.php/Item/checkout
+---
