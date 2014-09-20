@@ -70,6 +70,7 @@
 							<p>
 								<label>User Name</label> <input id="username" type="text"
 									name="username" placeholder="username" />
+									<span id="user-result"></span>
 							</p>
 							<p>
 								<label>Password&nbsp;&nbsp;</label> <input id="password"
