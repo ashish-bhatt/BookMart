@@ -6,6 +6,24 @@
 <meta name="description" content="BookMart's">
 <meta name="author" content="Ashish">
 		<?php include(Yii::getPathOfAlias('application.views.common.resources').'.php'); ?>
+		<script type="text/javascript">
+		$(document).ready( function() {
+		$("#username").keyup(function (e) { //user types username on inputfiled
+			   var username = $(this).val(); //get the string typed by user
+			   if(username.length == 0)
+				   $("#user-result").html("");
+			   else
+			   {
+				   $.post('../Login/SearchUsername', {'username':username}, function(data) { //make ajax call to check_username.php
+					   if(data == "true")
+						   $("#user-result").html('User already exists.');
+					   else if(data == "false")
+						   $("#user-result").html('Username is available');
+			   });
+			   }
+			});
+		});
+		</script>
 	</head>
 
 <body>

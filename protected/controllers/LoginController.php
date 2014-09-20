@@ -11,7 +11,7 @@ class LoginController extends Controller
 	public function actionRegister()
 	{
 		$user = new Users();
-		$user->username = $_POST['username'];
+		$user->username = strtolower($_POST['username']);
 		$user->hash = Utils::generateHash($_POST['password']);
 		$user->email = $_POST['email'];
 		try
@@ -34,12 +34,28 @@ class LoginController extends Controller
 		$this->render('index');
 	}
 	
+	public function actionSearchUsername()
+	{
+		$user = new Users();
+		$user->username = strtolower($_POST['username']);
+		$criteria=new CDbCriteria;
+		$criteria->compare('username',$user->username);
+	
+		$user = $user->find($criteria);
+		if(sizeof($user) == 0)
+			$results = false;
+		else
+			$results = true;
+	
+		echo CJSON::encode($results);
+	}
+	
 	public function actionLogin()
 	{
 		$user = new Users();
 		
 		$criteria=new CDbCriteria;
-		$criteria->compare('username',$_POST['username']);
+		$criteria->compare('username',strtolower($_POST['username']));
 		$user = $user->find($criteria);
 		
 		if(!is_null($user))
